@@ -72,3 +72,19 @@ Build a production-ready CI/CD pipeline for a containerized web service.
 - Run with debug build 
 - Debug check without exposing secrets 
 
+## Day 7 – CI Failure Handling
+
+### Failure Introduced
+- Injected a JavaScript syntax error in server.js
+
+### CI Behavior
+- Lint stage failed
+- Pipeline stopped before Docker build
+
+### Root Cause
+- Node.js detected invalid syntax during linting
+
+### Resolution
+- Fixed syntax error
+- Re-triggered pipeline successfully
+
