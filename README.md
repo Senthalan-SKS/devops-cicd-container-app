@@ -1,3 +1,5 @@
+
+
 # Production-Ready CI/CD Pipeline
 
 ## Project Goal
@@ -27,4 +29,9 @@ Build a production-ready CI/CD pipeline for a containerized web service.
 - Created non-root user
 - Installed Git and Docker
 - Configured Docker without root
+
+## Day 2 Notes
+- Built a minimal Node.js Express app
+- Configured using environment variables without env file 
+- Added health endpoint for monitoring
 
