@@ -35,3 +35,9 @@ Build a production-ready CI/CD pipeline for a containerized web service.
 - Configured using environment variables without env file 
 - Added health endpoint for monitoring
 
+## Day 3 Notes
+- Created production-optimized Dockerfile
+- Used Alpine base image
+- Excluded unnecessary files with .dockerignore
+- Verified container restart behavior
+
