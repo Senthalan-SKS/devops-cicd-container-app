@@ -27,12 +27,6 @@ jobs:
         run: |
           node -c server.js
 
-      - name: Debug secrets presence
-        run: |
-          if [ -z "${{ secrets.DOCKER_USERNAME }}" ]; then echo "USERNAME missing"; else echo "USERNAME present"; fi
-          if [ -z "${{ secrets.DOCKER_PASSWORD }}" ]; then echo "PASSWORD missing"; else echo "PASSWORD present"; fi
-
-
       - name: Log in to Docker Hub
         uses: docker/login-action@v3
         with:
