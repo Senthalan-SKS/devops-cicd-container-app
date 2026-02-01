@@ -59,3 +59,10 @@ Build a production-ready CI/CD pipeline for a containerized web service.
 ### Lesson Learned
 - Container startup failures often indicate runtime misconfiguration rather than build errors
 
+## Day 5 – Docker Hub & Versioning
+
+- Published Docker image to Docker Hub
+- Used semantic versioning for image tags
+- Maintained stable `latest` tag
+- Verified image by pulling and running from registry
+
