@@ -66,3 +66,9 @@ Build a production-ready CI/CD pipeline for a containerized web service.
 - Maintained stable `latest` tag
 - Verified image by pulling and running from registry
 
+## Day 6 - CI Pipeline Established 
+- Pipeline created
+- Error identified 
+- Run with debug build 
+- Debug check without exposing secrets 
+
