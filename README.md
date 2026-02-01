@@ -41,3 +41,21 @@ Build a production-ready CI/CD pipeline for a containerized web service.
 - Excluded unnecessary files with .dockerignore
 - Verified container restart behavior
 
+## Day 4 – Docker Debugging
+
+### Issue Introduced
+- Modified Docker CMD to reference a non-existent file
+
+### Observed Behavior
+- Container exited immediately after startup
+
+### Root Cause
+- Node.js failed at runtime because the specified entry file was missing
+
+### Resolution
+- Corrected CMD to point to the valid server.js file
+- Rebuilt image and redeployed container
+
+### Lesson Learned
+- Container startup failures often indicate runtime misconfiguration rather than build errors
+
