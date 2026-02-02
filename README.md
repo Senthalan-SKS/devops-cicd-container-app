@@ -95,3 +95,12 @@ Build a production-ready CI/CD pipeline for a containerized web service.
 - Pulled Docker image from Docker Hub
 - Deployed container on AWS EC2
 - Verified application accessibility via public IP
+
+## Day 9 – Reverse Proxy & Rollback
+
+- Configured Nginx as a reverse proxy
+- Routed traffic through port 80
+- Ran multiple app versions in parallel
+- Switched traffic without downtime
+- Performed instant rollback via Nginx reload
+
