@@ -88,3 +88,10 @@ Build a production-ready CI/CD pipeline for a containerized web service.
 - Fixed syntax error
 - Re-triggered pipeline successfully
 
+## Day 8 – AWS EC2 Deployment
+
+- Provisioned Ubuntu EC2 instance (t3.micro)
+- Installed Docker and Nginx
+- Pulled Docker image from Docker Hub
+- Deployed container on AWS EC2
+- Verified application accessibility via public IP
