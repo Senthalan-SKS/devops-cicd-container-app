@@ -1,5 +1,3 @@
-
-
 # Production-Ready CI/CD Pipeline
 
 ## Project Goal
@@ -103,4 +101,18 @@ Build a production-ready CI/CD pipeline for a containerized web service.
 - Ran multiple app versions in parallel
 - Switched traffic without downtime
 - Performed instant rollback via Nginx reload
+
+## Day 10 -Documentation
+-  Architecture Diagram
+![Architecture](architecture.png)
+
+- Deployment Process
+The application is deployed on an AWS EC2 Ubuntu instance.
+Docker is installed on the server and images are pulled from Docker Hub.
+Nginx acts as a reverse proxy, exposing the application via port 80 while routing traffic to containers running on internal ports.
+
+- Rollback Strategy
+Multiple application versions run simultaneously on different ports.
+Nginx routing is updated to switch traffic between versions without restarting containers.
+Rollback is performed instantly by redirecting traffic back to the previous stable version.
 
